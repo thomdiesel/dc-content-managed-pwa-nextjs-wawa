@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://anyafinn.dev/component-gallery-block.json",
+	"$id": "https://wawa.dev/component-gallery-block.json",
 
 	"title": "Gallery Block",
 	"description": "",
