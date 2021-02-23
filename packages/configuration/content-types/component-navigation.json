@@ -4,14 +4,20 @@
     {
         "label": "Navigation",
         "visualizations": [
+ 
         {
-            "label": "PWA (Localhost)",
-            "templatedUri":"http://localhost:3000/visualization?id={{content.sys.id}}&contentApi={{vse.domain}}",
+            "label": "PWA (Vercel)",
+            "templatedUri":"https://dc-content-managed-pwa-nextjs-wawa.vercel.app/visualization?id={{content.sys.id}}&contentApi={{vse.domain}}",
             "default": true
         },
         {
+            "label": "PWA (Localhost)",
+            "templatedUri":"http://localhost:3000/visualization?id={{content.sys.id}}&contentApi={{vse.domain}}",
+            "default": false
+        },
+        {
             "label": "JSON",
-            "templatedUri":"https://presalesadisws.s3.eu-west-1.amazonaws.com/dynamic-content/dc-visualization-content-delivery/index.html?vse={{vse.domain}}&id={{content.sys.id}}&format=inlined&depth=all&v2=true",
+            "templatedUri":"https://{{vse.domain}}/content/id/{{content.sys.id}}?depth=all&format=inlined",
             "default": false
         }],
         "icons": [
